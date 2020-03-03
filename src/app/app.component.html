@@ -1,55 +1,47 @@
 <div class="uk-card uk-card-hover uk-background-default uk-padding tkim-curved">
   <div>
-  <div class="uk-child-width-expand@s uk-text-center uk-padding-small" uk-grid>
-  <div>
-  <div>
-  <button class="uk-button tkim-green tkim-curved" (click)="getStream()">Start Stream</button>
-  </div>
-  </div>
-  <div>
-  <div>
-  <button class="uk-button tkim-red tkim-curved" (click)="stopStream()">Stop Stream</button>
-  </div>
-  </div>
-  <div>
-  <div>
-  <button class="uk-button tkim-yellow tkim-curved" (click)="changeColor()">Change Colour</button>
-  </div>
-  </div>
-  <div> 
-  <div>
-  <button class="uk-button tkim-lightblue tkim-curved" (click)="hideOne()">Hide Humidity</button>
-  </div>
-  </div>
-  </div>
-  <div class="uk-padding-small" style="display: block;">
-  <canvas baseChart width="400" 
-  height="100" 
-  [datasets]="lineChartData" 
-  [labels]="lineChartLabels"
-  [options]="lineChartOptions" 
-  [colors]="lineChartColors" 
-  [legend]="lineChartLegend"
-  [chartType]="lineChartType" 
-  [plugins]="lineChartPlugins" 
-  (chartHover)="chartHovered($event)"
-  (chartClick)="chartClicked($event)">
-  </canvas>
-  </div>
-  <app-piechart></app-piechart>
-  
-  <h3> Historical Data</h3>
-  <div class="uk-overflow-auto">
-  <table class="uk-table uk-table-small uk-table-divider uk-table-justify">
-  <tr>
-  <th *ngFor="let label of lineChartLabels">{{label }}</th>
-  </tr>
-  <tr>
-  </tr>
-  <tr *ngFor="let d of lineChartData; let i=index" [class]="'line-'+i">
-  <td *ngFor="let label of lineChartLabels; let j=index">{{d && d.data[j] | number}}</td>
-  </tr>
-  </table>
-  </div>
-  
+    <div class="uk-child-width-expand@s uk-text-center uk-padding-small" uk-grid>
+      <div>
+        <div>
+          <button class="uk-button tkim-green tkim-curved" (click)="getStream()">Start Stream</button>
+        </div>
+      </div>
+      <div>
+        <div>
+          <button class="uk-button tkim-red tkim-curved" (click)="stopStream()">Stop Stream</button>
+        </div>
+      </div>
+      <div>
+        <div>
+          <button class="uk-button tkim-yellow tkim-curved" (click)="changeColor()">Change Colour</button>
+        </div>
+      </div>
+      <div>
+        <div>
+          <button class="uk-button tkim-lightblue tkim-curved" (click)="hideOne()">Hide Humidity</button>
+        </div>
+      </div>
+    </div>
+    <div class="uk-padding-small" style="display: block;">
+      <canvas baseChart width="400" height="100" [datasets]="lineChartData" [labels]="lineChartLabels"
+        [options]="lineChartOptions" [colors]="lineChartColors" [legend]="lineChartLegend" [chartType]="lineChartType"
+        [plugins]="lineChartPlugins" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)">
+      </canvas>
+    </div>
+    <app-piechart></app-piechart>
+
+    <h3> Historical Data</h3>
+    <div class="uk-overflow-auto">
+      <table class="uk-table uk-table-small uk-table-divider uk-table-justify">
+        <tr>
+          <th *ngFor="let label of lineChartLabels">{{label }}</th>
+        </tr>
+        <tr>
+        </tr>
+        <tr *ngFor="let d of lineChartData; let i=index" [class]="'line-'+i">
+          <td *ngFor="let label of lineChartLabels; let j=index">{{d && d.data[j] | number}}</td>
+        </tr>
+      </table>
+    </div>
+
   </div>
