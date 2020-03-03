@@ -2,7 +2,6 @@ import { Component, OnInit, ViewChild, Input } from '@angular/core';
 import { DataService } from 'src/app/data.service';
 import { ChartDataSets, ChartOptions } from 'chart.js';
 import { Color, BaseChartDirective, Label } from 'ng2-charts';
-import { PiechartComponent } from './piechart/piechart.component';
 
 
 @Component({

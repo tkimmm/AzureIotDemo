@@ -1,7 +1,6 @@
-import { Component, OnInit, ViewChild, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { DataService } from 'src/app/data.service';
-import { ChartDataSets, ChartOptions, ChartPoint, ChartType } from 'chart.js';
-import { Color, BaseChartDirective, Label, SingleDataSet } from 'ng2-charts';
+import { ChartOptions } from 'chart.js';
 import * as pluginDataLabels from 'chartjs-plugin-datalabels';
 
 @Component({

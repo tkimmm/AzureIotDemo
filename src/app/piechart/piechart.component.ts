@@ -1,7 +1,7 @@
-import { Component, OnInit, ViewChild, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { DataService } from 'src/app/data.service';
-import { ChartDataSets, ChartOptions, ChartPoint, ChartType } from 'chart.js';
-import { Color, BaseChartDirective, Label, SingleDataSet } from 'ng2-charts';
+import { ChartOptions, ChartType } from 'chart.js';
+import { Label, SingleDataSet } from 'ng2-charts';
 
 
 @Component({
@@ -17,14 +17,7 @@ export class PiechartComponent implements OnInit {
 
   // PolarArea
   public polarAreaChartLabels: Label[] = ['Temperature', 'Humidity', 'Category 3', 'Category 4', 'Category 5'];
-  public polarAreaChartData: SingleDataSet = [
-    0,0,0,0,0
-    // this._ds.getRandomInt(30),
-    // this._ds.getRandomInt(20),
-    // this._ds.getRandomInt(10),
-    // this._ds.getRandomInt(40),
-    // this._ds.getRandomInt(20)
-  ]
+  public polarAreaChartData: SingleDataSet = [0,0,0,0,0]
   public polarAreaLegend = true;
   public polarAreaChartType: ChartType = 'polarArea';
   public polarChartOptions: ChartOptions = {
