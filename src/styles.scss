@@ -1,1 +1,53 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://rsms.me/inter/inter.css');
+
+@supports (font-variation-settings: normal) {
+  html { 
+      font-family: 'Inter var', sans-serif; 
+    }
+}
+
+html {
+    font-family: 'Inter', sans-serif; 
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility
+}
+
+.tkim-red {
+    background-color: #F78888;
+    color: #ECECEC;
+    border-radius: 25px;
+}
+.tkim-green {
+    background-color:rgba(0, 255, 0, 0.3);
+    color: #000;
+}
+.tkim-yellow {
+    background-color: #F3D250;
+}
+.tkim-yellow-section {
+    background-color: #F3D250;
+}
+.tkim-white {
+    background-color: #ECECEC;
+    border-radius: 10px;
+}
+.tkim-lightblue {
+    background-color: #90CCF4;
+}
+.tkim-blue {
+    background-color: #5DA2D5;
+}
+
+.tkim-curved {
+    border-radius: 10px;
+}
+
+.tkim-curved-image {
+    border-radius: 10px 10px 0px 0px;
+}
