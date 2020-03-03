@@ -26,10 +26,6 @@ export class DataService {
 
   constructor(private http: HttpClient) {}
 
-  // getGoogle(): Observable<any> {
-  // return this.http.post<any>('https://tkimauth.azurewebsites.net/.auth/login/google/callback',{});
-  // }
-  
   checkIotObj(iotObj): void {
     if (Object.keys(iotObj).length == 3) {
       this.tempStorage$.next(iotObj.temperature);
