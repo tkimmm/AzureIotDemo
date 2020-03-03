@@ -1,5 +1,5 @@
 # AzureIotVIsual
 
-clone repo
-npm install
-ng serve
+- clone repo
+- npm install
+- ng serve
