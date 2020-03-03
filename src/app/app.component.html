@@ -25,7 +25,7 @@
     <div class="uk-padding-small" style="display: block;">
       <canvas baseChart width="400" height="100" [datasets]="lineChartData" [labels]="lineChartLabels"
         [options]="lineChartOptions" [colors]="lineChartColors" [legend]="lineChartLegend" [chartType]="lineChartType"
-        [plugins]="lineChartPlugins" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)">
+        (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)">
       </canvas>
     </div>
     <app-piechart></app-piechart>

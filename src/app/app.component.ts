@@ -18,17 +18,9 @@ export class AppComponent implements OnInit {
     { data: [], label: 'Temperature', yAxisID: 'y-axis-1' },
     { data: [], label: 'Humidity' }
   ];
-  public lineChartLabels: Label[] = [
-    // this._ds.getCurrentDateTime(),
-    // this._ds.getCurrentDateTime(),
-    // this._ds.getCurrentDateTime(),
-    // this._ds.getCurrentDateTime(),
-    // this._ds.getCurrentDateTime(),
-    // this._ds.getCurrentDateTime(),
-    // this._ds.getCurrentDateTime()
-  ]
+  public lineChartLabels: Label[] = []
 
-  public lineChartOptions: (ChartOptions) = {
+  public lineChartOptions: ChartOptions = {
     responsive: true,
     scales: {
       // We use this empty structure as a placeholder for dynamic theming.
