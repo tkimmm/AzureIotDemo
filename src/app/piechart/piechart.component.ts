@@ -6,8 +6,21 @@ import { Label, SingleDataSet } from 'ng2-charts';
 
 @Component({
   selector: 'app-piechart',
-  templateUrl: './piechart.component.html',
-  styleUrls: ['./piechart.component.scss']
+  template: `<div class="uk-grid-divider uk-child-width-expand@s" uk-grid>
+  <div class="uk-panel">
+    <app-barchart></app-barchart>
+  </div>
+    <div style="display: block">
+        <canvas baseChart
+          [data]="polarAreaChartData"
+          [labels]="polarAreaChartLabels"
+          [legend]="polarAreaLegend"
+          [options]="polarChartOptions" 
+          [chartType]="polarAreaChartType">
+        </canvas>
+      </div>
+    
+    </div>`
 })
 export class PiechartComponent implements OnInit {
 
