@@ -27,7 +27,7 @@ export class DataService {
   constructor(private http: HttpClient) {}
 
   checkIotObj(iotObj): void {
-    if (Object.keys(iotObj).length == 3) {
+    if (Object.keys(iotObj).length == 4) {
       this.tempStorage$.next(iotObj.temperature);
       this.humidStorage$.next(iotObj.humidity);
     } else if (Object.keys(iotObj).includes('temperature')) {
