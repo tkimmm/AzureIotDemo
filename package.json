@@ -24,7 +24,7 @@
     "chartjs-plugin-datalabels": "^1.0.0",
     "core-js": "^3.8.3",
     "ng2-charts": "^2.4.3",
-    "rxjs": "~6.6.3",
+    "rxjs": "~6.6.7",
     "tslib": "^1.9.0",
     "zone.js": "~0.9.1"
   },
