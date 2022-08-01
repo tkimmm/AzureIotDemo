@@ -22,7 +22,7 @@
     "@microsoft/signalr": "^6.0.4",
     "chart.js": "^2.9.4",
     "chartjs-plugin-datalabels": "^1.0.0",
-    "core-js": "^3.23.4",
+    "core-js": "^3.24.1",
     "ng2-charts": "^2.4.3",
     "rxjs": "~6.6.7",
     "tslib": "^2.4.0",
