@@ -19,7 +19,7 @@
     "@angular/platform-browser": "~8.2.14",
     "@angular/platform-browser-dynamic": "~8.2.14",
     "@angular/router": "~8.2.14",
-    "@microsoft/signalr": "^6.0.4",
+    "@microsoft/signalr": "^6.0.9",
     "chart.js": "^2.9.4",
     "chartjs-plugin-datalabels": "^1.0.0",
     "core-js": "^3.25.3",
